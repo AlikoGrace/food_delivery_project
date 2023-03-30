@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'app_styles.dart';
-import 'widgets/big_text.dart';
-import 'widgets/small_text.dart';
+import 'package:food_delivery_project/app_styles.dart';
+import 'package:food_delivery_project/widgets/big_text.dart';
+import 'package:food_delivery_project/widgets/small_text.dart';
 
 class MainHomePage extends StatefulWidget {
   const MainHomePage({Key? key}) : super(key: key);
@@ -29,7 +29,15 @@ class _MainHomePageState extends State<MainHomePage> {
                       text: "Country",
                       color: kMainColor,
                     ),
-                    SmallText()
+                    Row(
+                      children: [
+                        SmallText(
+                          text: 'Nepal',
+                          color: Colors.black54,
+                        ),
+                        Icon(Icons.arrow_drop_down_rounded)
+                      ],
+                    )
                   ],
                 ),
                 Container(
