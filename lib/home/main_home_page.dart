@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_project/app_styles.dart';
 import 'package:food_delivery_project/widgets/big_text.dart';
 import 'package:food_delivery_project/widgets/small_text.dart';
+import 'food_page_body.dart';
 
 class MainHomePage extends StatefulWidget {
   const MainHomePage({Key? key}) : super(key: key);
@@ -54,7 +55,8 @@ class _MainHomePageState extends State<MainHomePage> {
                 )
               ],
             ),
-          )
+          ),
+          FoodPageBody()
         ],
       ),
     );
