@@ -31,7 +31,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       children: [
         Container(
           margin: EdgeInsets.only(left: 5, right: 5),
-          height: 200,
+          height: 210,
           decoration: BoxDecoration(
             color: index.isEven ? Color(0xFF89dad0) : Color(0xFFffd28d),
             borderRadius: BorderRadius.circular(30),
