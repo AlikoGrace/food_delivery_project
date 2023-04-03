@@ -19,7 +19,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   Widget build(BuildContext context) {
     return Container(
       //container should always have a height
-      height: 300,
+      height: 200,
+      //original is 300
       child: PageView.builder(
           controller: pageController,
           itemCount: 5,
