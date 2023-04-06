@@ -17,6 +17,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   //screen in the builder
   var _currentPageValue = 0.0;
   double _scaleFactor = 0.8;
+  double _height = 220;
+
   //that's like 80% of it's original size
 
   //the below function will listen to the pageNumber and assign it _currentPageValue
@@ -42,7 +44,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
   Widget build(BuildContext context) {
     return Container(
       //container should always have a height
-      height: 350,
+      height: 320,
       child: PageView.builder(
           controller: pageController,
           itemCount: 5,
@@ -56,11 +58,15 @@ class _FoodPageBodyState extends State<FoodPageBody> {
     Matrix4 matrix = new Matrix4.identity();
     if (index == _currentPageValue.floor()) {
       var currScale = 1 - (_currentPageValue - index) * (1 - _scaleFactor);
+      var currTrans = _height * (1 - currScale) / 2;
       matrix = Matrix4.diagonal3Values(1, currScale, 1);
     } else if (index == _currentPageValue.floor() + 1) {
       var currScale =
           _scaleFactor + (_currentPageValue - index + 1) * (1 - _scaleFactor);
+      var currTrans = _height * (1 - currScale) / 2;
       matrix = Matrix4.diagonal3Values(1, currScale, 1);
+      matrix = Matrix4.diagonal3Values(1, currScale, 1)
+        ..setTranslationRaw(0, currTrans, 0);
     }
     return Transform(
       transform: matrix,
