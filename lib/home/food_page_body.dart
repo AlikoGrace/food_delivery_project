@@ -138,7 +138,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                           ),
                           SmallText(text: '4.5'),
                           SizedBox(
-                            width: 10,
+                            width: 20,
                           ),
                           SmallText(text: '185'),
                           SizedBox(
