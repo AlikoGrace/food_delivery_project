@@ -1,3 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class Dimentions {}
+class Dimentions {
+  static double screenHeight = Get.context!.height;
+}
