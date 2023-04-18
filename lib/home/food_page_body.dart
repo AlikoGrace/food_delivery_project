@@ -4,6 +4,7 @@ import 'package:food_delivery_project/widgets/big_text.dart';
 import 'package:food_delivery_project/widgets/small_text.dart';
 import 'package:food_delivery_project/widgets/icon_and_text_widget.dart';
 import 'package:dots_indicator/dots_indicator.dart';
+import 'package:food_delivery_project/dimentions.dart';
 
 class FoodPageBody extends StatefulWidget {
   const FoodPageBody({Key? key}) : super(key: key);
@@ -47,7 +48,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       children: [
         Container(
           //container should always have a height
-          height: 320,
+          height: Dimentions.pageContainer,
           child: PageView.builder(
               controller: pageController,
               itemCount: 5,
@@ -90,7 +91,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
         children: [
           Container(
             margin: EdgeInsets.only(left: 10, right: 10),
-            height: 220,
+            height: Dimentions.pageViewContainer,
             decoration: BoxDecoration(
               color: index.isEven ? Color(0xFF89dad0) : Color(0xFFffd28d),
               borderRadius: BorderRadius.circular(30),
@@ -104,7 +105,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
             alignment: Alignment.bottomCenter,
             child: Container(
               margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
-              height: 120,
+              height: Dimentions.pageViewTextContainer,
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
@@ -134,16 +135,16 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                     )),
                           ),
                           SizedBox(
-                            width: 20,
+                            width: 10,
                           ),
                           SmallText(text: '4.5'),
                           SizedBox(
-                            width: 20,
-                            //  actual width is 20
+                            width: 10,
+                            //  actual width is 10
                           ),
                           SmallText(text: '185'),
                           SizedBox(
-                            width: 20,
+                            width: 10,
                           ),
                           SmallText(text: 'comments'),
                         ],
