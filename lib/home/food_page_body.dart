@@ -118,12 +118,13 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                     BoxShadow(color: Colors.white, offset: Offset(5, 0))
                   ]),
               child: Container(
-                  padding: EdgeInsets.only(right: 15, left: 15, top: 10),
+                  padding: EdgeInsets.only(
+                      right: 15, left: 15, top: Dimentions.Height10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       BigText(text: 'Chinese Dish'),
-                      SizedBox(height: 10),
+                      SizedBox(height: Dimentions.Height10),
                       Row(
                         children: [
                           Wrap(
@@ -149,7 +150,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                           SmallText(text: 'comments'),
                         ],
                       ),
-                      SizedBox(height: 15),
+                      SizedBox(height: Dimentions.Height15),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
