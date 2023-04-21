@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'small_text.dart';
+import 'package:food_delivery_project/dimentions.dart';
 
 class IconTextWidget extends StatelessWidget {
   final String text;
@@ -15,6 +16,7 @@ class IconTextWidget extends StatelessWidget {
         Icon(
           icon,
           color: iconColor,
+          size: Dimentions.iconSize24,
         ),
         SizedBox(
           width: 5,

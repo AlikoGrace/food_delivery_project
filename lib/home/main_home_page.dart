@@ -3,6 +3,7 @@ import 'package:food_delivery_project/app_styles.dart';
 import 'package:food_delivery_project/widgets/big_text.dart';
 import 'package:food_delivery_project/widgets/small_text.dart';
 import 'food_page_body.dart';
+import 'package:food_delivery_project/dimentions.dart';
 
 class MainHomePage extends StatefulWidget {
   const MainHomePage({Key? key}) : super(key: key);
@@ -20,8 +21,10 @@ class _MainHomePageState extends State<MainHomePage> {
         children: [
           Container(),
           Container(
-            margin: EdgeInsets.only(top: 45, bottom: 15),
-            padding: EdgeInsets.only(left: 20, right: 20),
+            margin: EdgeInsets.only(
+                top: Dimentions.Height45, bottom: Dimentions.Height15),
+            padding: EdgeInsets.only(
+                left: Dimentions.width20, right: Dimentions.width20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -43,15 +46,16 @@ class _MainHomePageState extends State<MainHomePage> {
                   ],
                 ),
                 Container(
-                  height: 45,
-                  width: 45,
+                  height: Dimentions.Height45,
+                  width: Dimentions.Height45,
                   decoration: BoxDecoration(
                     color: kMainColor,
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(Dimentions.raduis15),
                   ),
                   child: Icon(
                     Icons.search_rounded,
                     color: Colors.white,
+                    size: Dimentions.iconSize24,
                   ),
                 )
               ],

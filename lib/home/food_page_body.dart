@@ -90,7 +90,8 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       child: Stack(
         children: [
           Container(
-            margin: EdgeInsets.only(left: 10, right: 10),
+            margin: EdgeInsets.only(
+                left: Dimentions.width10, right: Dimentions.width10),
             height: Dimentions.pageViewContainer,
             decoration: BoxDecoration(
               color: index.isEven ? Color(0xFF89dad0) : Color(0xFFffd28d),
@@ -104,7 +105,10 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
+              margin: EdgeInsets.only(
+                  left: Dimentions.width30,
+                  right: Dimentions.width30,
+                  bottom: Dimentions.Height30),
               height: Dimentions.pageViewTextContainer,
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -119,7 +123,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                   ]),
               child: Container(
                   padding: EdgeInsets.only(
-                      right: 15, left: 15, top: Dimentions.Height10),
+                      right: Dimentions.width15,
+                      left: Dimentions.width15,
+                      top: Dimentions.Height10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -136,16 +142,16 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                     )),
                           ),
                           SizedBox(
-                            width: 10,
+                            width: Dimentions.width10,
                           ),
                           SmallText(text: '4.5'),
                           SizedBox(
-                            width: 10,
+                            width: Dimentions.width10,
                             //  actual width is 10
                           ),
                           SmallText(text: '185'),
                           SizedBox(
-                            width: 10,
+                            width: Dimentions.width10,
                           ),
                           SmallText(text: 'comments'),
                         ],
